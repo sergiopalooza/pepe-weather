@@ -4,7 +4,7 @@ $(document).ready(function(){
 		url: 'http://api.openweathermap.org/data/2.5/weather?q=DeKalb, IL',
 		success: function(data){
 			console.log("success", data);
-			$('#temp').text((data.main.temp) * (9/5) - 459.67);
+			$('#temp').text(((data.main.temp) * (9/5) - 459.67) + ' F');
 			$('#city').text(data.name);
 		}
 	})
