@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var lat = 0;
 	var longi = 0;
-	function getLocation() {
+	function getLocation() { //checks if they allow geolocation
 	    if (navigator.geolocation) {
 	        navigator.geolocation.getCurrentPosition(showPosition);
 	    } 
@@ -18,9 +18,6 @@ $(document).ready(function(){
 	    lat = position.coords.latitude;
 	    longi = position.coords.longitude;
 	    console.log("after setting coords" + lat, longi);
-	    //console.log("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + longi);
-	    newURL = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + longi;
-	    //console.log(newURL);
 
 	    $.ajax({
 		type: 'GET',
