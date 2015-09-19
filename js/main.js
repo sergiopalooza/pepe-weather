@@ -11,27 +11,26 @@ $(document).ready(function(){
 	}
 	
 	function showPosition(position) {
-	    $('#coordinates').html("Latitude: " + position.coords.latitude +
-	    "<br>Longitude: " + position.coords.longitude); 
+	    //$('#coordinates').html("Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude); 
 	    // lat = Math.round(position.coords.latitude);
 	    // longi = Math.round(position.coords.longitude);
 	    lat = position.coords.latitude;
 	    longi = position.coords.longitude;
-	    console.log("after setting coords" + lat, longi);
 
 	    $.ajax({
 		type: 'GET',
 		url: "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + longi,
 		success: function(data){
-			console.log("right after making api call " + lat, longi);
 			console.log("success", data);
-			$('#temp').text(((data.main.temp) * (9/5) - 459.67) + ' F');
+			var temp = ((data.main.temp) * (9/5) - 459.67);
+			temp = temp.toFixed(2) + ' F'; //rounding and formatting
+			$('#temp').text(temp);
 			$('#city').text(data.name);
+			$('#weather').text(data.weather[0].description);
 		}
 		})
 	}
 getLocation();
-console.log("right after making getLocation call " + lat, longi);	
 	
 	
 	
