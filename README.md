@@ -1,9 +1,5 @@
-# pepe-weather
-
-# Pepe Weather
+S# Pepe Weather
 Memes meet weather
-
-A remake of the popular game Flappy Bird using just html/css/js.
 Dumb little project to make a weather app served with some Pepe the Frog memes.
 
 Requires HTML5 and location services.
