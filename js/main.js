@@ -36,6 +36,9 @@ $(document).ready(function(){
 		});
 	}
 
+	
+	/*This function takes the condition that is displayed
+	  to the user and changes the background accordingly*/
 	function setBackground(weather){
 		switch (weather) {
 			case "mist":

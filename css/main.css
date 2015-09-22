@@ -1,6 +1,7 @@
 body {
+	margin-top: 2em;
 	text-align: center;
-	font-size: 3em;
+	font-size: 6em;
 }
 h1 {
 	font-family: 'Architects Daughter';
@@ -9,11 +10,12 @@ h1 {
 
 
 .info {
-	height: 180px;
-	width: 150px;
+ 	
+	height: 8em;
+	width: 7em;
 	border-radius: 10px;
 	background-color: white;
-	opacity: .5;
+	opacity: .7;
 	margin: 0 auto;
-	filter: alpha(opacity=60); /* For IE8 and earlier */
+	filter: alpha(opacity=70); /* For IE8 and earlier */
 }
