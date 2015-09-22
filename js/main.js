@@ -27,13 +27,16 @@ $(document).ready(function(){
 			$('#temp').text(temp);
 			$('#city').text(data.name);
 			$('#weather').text(data.weather[0].description);
+			if($("#weather").text()=="sky is clear"){
+				console.log("it worked");
+			}
 			$('#icon').html("<img src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png' />");
 		}
 		})
 	}
 getLocation();
 	
-	
+
 	
 	
 });

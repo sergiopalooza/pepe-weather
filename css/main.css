@@ -1,6 +1,11 @@
 body {
 	text-align: center;
+	font-size: 3em;
 }
 h1 {
 	font-family: 'Architects Daughter';
+}
+
+.inline {
+	float: left;
 }
