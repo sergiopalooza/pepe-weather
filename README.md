@@ -1,5 +1,6 @@
-S# Pepe Weather
+# Pepe Weather
 Memes meet weather
+
 Dumb little project to make a weather app served with some Pepe the Frog memes.
 
 Requires HTML5 and location services.
