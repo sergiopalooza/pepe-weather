@@ -6,6 +6,14 @@ h1 {
 	font-family: 'Architects Daughter';
 }
 
-.inline {
-	float: left;
+
+
+.info {
+	height: 180px;
+	width: 150px;
+	border-radius: 10px;
+	background-color: white;
+	opacity: .5;
+	margin: 0 auto;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
 }
