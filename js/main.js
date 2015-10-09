@@ -75,6 +75,13 @@ $(document).ready(function(){
 					'background-repeat': 'no-repeat',
 					'background-size': 'cover'
 				});
+				break;	
+			case "moderate rain":
+				$('body').css({
+					'background-image': 'url(img/rain-pepe.jpg)',
+					'background-repeat': 'no-repeat',
+					'background-size': 'cover'
+				});
 				break;
 			default: 
 				$('body').css({
