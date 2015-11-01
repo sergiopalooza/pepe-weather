@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 	    $.ajax({
 		type: 'GET',
-		url: "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + longi,
+		url: "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + longi + "&APPID=e25dfdd5074e4e7e0c7dbb9caf6accb1",
 			success: function(data){
 				console.log("success", data);
 				var temp = ((data.main.temp) * (9/5) - 459.67); //temperature is given in kelvin. converting to F
